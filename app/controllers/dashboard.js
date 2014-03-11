@@ -1,3 +1,3 @@
-App.DashboardController = Em.ObjectController.extend({
+App.DashboardController = Em.ArrayController.extend({
 
 });
