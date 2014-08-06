@@ -5,6 +5,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('dashboard');
+  this.route('supplement', {path: '/:supplement_id'});
 });
 
 export default Router;
