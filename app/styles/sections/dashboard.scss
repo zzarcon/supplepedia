@@ -1,0 +1,22 @@
+#dashboard{
+  @include flexbox;
+
+  #left-menu{
+    width: 200px;
+    background-color: #ccc;
+    border-right: 1px solid black;
+  }
+
+  #dashboard-section{
+    @include flex(1);
+    background-color: #aaa;
+  }
+
+  #filter{
+    border-bottom: 1px solid black;
+  }
+
+  .supplement{
+    border: 2px solid black;
+  }
+}

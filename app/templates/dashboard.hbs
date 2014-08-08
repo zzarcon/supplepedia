@@ -1,2 +1,23 @@
-DASHBOARD!
-{{#link-to "supplement" 123}} Wey {{/link-to}}
+<nav id="left-menu">
+  <ul>
+    <li>
+      Type: {{view "custom-select" content=supplementTypeNames value=currentSupplementType}}
+    </li>
+    <li>
+      Brand: {{view "custom-select" content=brandNames value=currentBrand}}
+    </li>
+  </ul>
+</nav>
+<section id="dashboard-section">
+  <div id="filter">
+    {{input value=supplementName type="text" placeholder="Type somethin..."}}
+  </div>
+  <div class="content">
+    {{#each displayedContent}}
+      <div class="supplement">
+        Brand name: {{brand.name}} <br>
+        Type: {{type.name}}
+      </div>
+    {{/each}}
+  </div>
+</section>
