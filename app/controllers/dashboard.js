@@ -19,17 +19,19 @@ export default Ember.ArrayController.extend({
 
   displayedContent: function() {
     var supplementName = this.get('supplementName');
-    var typeName = this.get('currentSupplementType');
-    var brandName = this.get('currentBrand');
-    var nameFilter, typeFilter, brandFilter;
+    var currentType = this.get('currentSupplementType');
+    var currentBrand = this.get('currentBrand');
+    var nameFilter, typeFilter, brandFilter, brandName, typeName;
 
     return this.filter(function(supplement) {
-      // nameFilter = supplement.get('brand.name').indexOf(supplementName) !== -1
-      //   || supplement.get('type.name').indexOf(supplementName) !== -1;
-      typeFilter = supplement.get('type.name') === (typeName !== 'All' ? typeName : supplement.get('type.name'));
-      brandFilter = supplement.get('brand.name') === (brandName !== 'All' ? brandName : supplement.get('brand.name'));
+      brandName = supplement.get('brand.name');
+      typeName = supplement.get('type.name');
 
-      return typeFilter && brandFilter;
+      nameFilter = brandName.indexOf(supplementName) !== -1 || typeName.indexOf(supplementName) !== -1;
+      typeFilter = typeName === (currentType !== 'All' ? currentType : typeName);
+      brandFilter = brandName === (currentBrand !== 'All' ? currentBrand : brandName);
+
+      return typeFilter && brandFilter && nameFilter;
     });
   }.property('supplementName', 'currentSupplementType', 'currentBrand'),
 
@@ -37,4 +39,4 @@ export default Ember.ArrayController.extend({
     console.log('arrangedContent');
     return supplement;
   })
-})
+});
