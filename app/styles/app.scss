@@ -1,10 +1,12 @@
 @import "vendor/sass-flex-mixin/flex";
 @import "utils/mixins";
 
+@import "cards";
 @import "sections";
 
 html, body {
   @include size(100%);
+  overflow: hidden;
   position: relative;
   margin: 0;
 }

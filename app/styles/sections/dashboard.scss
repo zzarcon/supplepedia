@@ -10,10 +10,17 @@
   #dashboard-section{
     @include flex(1);
     background-color: #aaa;
+    height: 100%;
   }
 
   #filter{
     border-bottom: 1px solid black;
+  }
+
+  .content{
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
   }
 
   .supplement{

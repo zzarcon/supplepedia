@@ -13,11 +13,13 @@
     {{input value=supplementName type="text" placeholder="Type somethin..."}}
   </div>
   <div class="content">
-    {{#each displayedContent}}
-      <div class="supplement">
-        Brand name: {{brand.name}} <br>
-        Type: {{type.name}}
-      </div>
-    {{/each}}
+    <div class="inner">
+      {{#each displayedContent}}
+        <figure>
+          <img {{bind-attr src="image"}}>
+          <figcaption>{{brand.name}} - {{type.name}}</figcaption>
+        </figure>
+      {{/each}}
+    </div>
   </div>
 </section>
