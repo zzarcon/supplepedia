@@ -1,7 +1,7 @@
 import Ember from "ember";
 
 export
-default Em.Route.extend({
+default Ember.Route.extend({
   beforeModel: function() {
     //FAKE DATA FOR DEVELOPMENT
     var brands = ['ON', 'Dymatize', 'Weider'];

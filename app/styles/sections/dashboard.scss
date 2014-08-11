@@ -3,24 +3,50 @@
 
   #left-menu{
     width: 200px;
-    background-color: #ccc;
     border-right: 1px solid black;
+
+    .logo{
+      @include background-image('supplepedia-logo.gif');
+      @include square(100px);
+      background-position: center;
+      background-size: contain;
+      margin: 10px auto;
+      background-repeat: no-repeat;
+      background-color: black;
+      border-radius: 50%;
+    }
+
+    ul{
+      text-align: right;
+
+      li{
+        margin-bottom: 10px;
+      }
+    }
+
+    select{
+      height: 27px;
+      width: 100px;
+      text-transform: capitalize;
+    }
   }
 
   #dashboard-section{
     @include flex(1);
-    background-color: #aaa;
     height: 100%;
   }
 
   #filter{
-    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
   }
 
   .content{
+    background: url("//subtlepatterns.com/patterns/scribble_light.png");
     height: 100%;
     padding: 10px;
     overflow: auto;
+    text-align: center;
   }
 
   .supplement{

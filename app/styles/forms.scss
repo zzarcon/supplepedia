@@ -1,0 +1,67 @@
+select{
+  @include background-image("form-select.png");
+  -webkit-appearance: none;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center right;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+  border-radius: 2px;
+  border: solid 1px #ccc;
+  padding: 0.4em;
+
+  margin: 0;
+  padding: 0;
+  font-size: 0.85em;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+//Search
+$tl: 0.6s; // transition length
+
+.search-box {
+  @include square(35px);
+  transition: width $tl, border-radius $tl, background $tl, box-shadow $tl;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: rgb(235, 235, 235);
+
+  &:hover {
+    color: white;
+    background: rgb(200, 200, 200);
+    box-shadow: 0 0 0 5px rgb(61, 71, 82);
+  }
+
+  &:focus {
+    transition: width $tl cubic-bezier(0,1.22,.66,1.39), border-radius $tl, background $tl;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding-left: 15px;
+    cursor: text;
+    width: 150px;
+    border-radius: auto;
+    background: rgb(235, 235, 235);
+    color: black;
+  }
+
+  &:not(:focus) {text-indent:-5000px;}
+}
+
+label{
+  margin-left: -29px;
+}
+
+.search-icon {
+  @include background-image('search.png');
+  @include square(14px);
+  position: relative;
+  top: 3px;
+  color: white;
+  cursor: pointer;
+  background-size: cover;
+  display: inline-block;
+}

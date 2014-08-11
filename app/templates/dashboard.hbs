@@ -1,4 +1,12 @@
 <nav id="left-menu">
+  <div class="logo"></div>
+  <div id="filter">
+    {{input value=supplementName class="search-box" type="text" placeholder="Type something..."}}
+    <label>
+      <span class="search-icon"></span>
+    </label>
+
+  </div>
   <ul>
     <li>
       Type: {{view "custom-select" content=supplementTypeNames value=currentSupplementType}}
@@ -9,9 +17,6 @@
   </ul>
 </nav>
 <section id="dashboard-section">
-  <div id="filter">
-    {{input value=supplementName type="text" placeholder="Type somethin..."}}
-  </div>
   <div class="content">
     <div class="inner">
       {{#each displayedContent}}

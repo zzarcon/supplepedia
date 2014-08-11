@@ -1,22 +1,24 @@
 @import "vendor/sass-flex-mixin/flex";
+@import "utils/reset";
 @import "utils/mixins";
 
 @import "cards";
+@import "forms";
 @import "sections";
 
 html, body {
-  @include size(100%);
+  @include square(100%);
   overflow: hidden;
   position: relative;
   margin: 0;
 }
 
 .main-section{
-  @include size(100%);
+  @include square(100%);
 }
 
 #supplepedia{
-  @include size(100%);
+  @include square(100%);
   &.loaded{
     #init-logo{
       opacity: 0;
@@ -26,7 +28,7 @@ html, body {
     @include flexbox;
     @include justify-content(center);
     @include align-items(center);
-    @include size(100%);
+    @include square(100%);
     transition: all 1.3s;
     opacity: 1;
     position: absolute;
