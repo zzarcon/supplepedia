@@ -15,9 +15,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'ON',
@@ -28,9 +29,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'ON',
@@ -41,9 +43,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: "ON",
@@ -54,9 +57,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'ON',
@@ -67,9 +71,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'Dymatize',
@@ -80,9 +85,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'Dymatize',
@@ -93,9 +99,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'Dymatize',
@@ -106,9 +113,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'Dymatize',
@@ -119,9 +127,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'Weider',
@@ -132,9 +141,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'Weider',
@@ -145,9 +155,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'Weider',
@@ -158,9 +169,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'Weider',
@@ -171,9 +183,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }, {
       brand: 'Weider',
@@ -184,9 +197,10 @@ default Ember.Route.extend({
       description: "Elite Whey Protein La proteína más vendida de Dymatize con el auténtico sabor made in USA Todo el mundo.",
       flavors: ["chocolate", "banana", "vanilla", "strawberry"],
       nutritionFacts: {
+        calories: 200,
         protein: 80,
         fats: 1,
-        carbs: 5
+        carbohydrates: 5
       }
     }];
 

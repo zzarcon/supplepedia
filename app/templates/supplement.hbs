@@ -1,1 +1,22 @@
-<img {{bind-attr src="image"}}>
+<div>
+  <img {{bind-attr src="image"}} class="supplement-image">
+  <hr>
+  {{name}} - {{weight}}
+  <hr>
+  {{description}}
+  <hr>
+</div>
+<div>
+  Flavors:
+  {{#each flavor in flavors}}
+    {{flavor}}
+  {{/each}}
+  <hr>
+</div>
+<div>
+  Nutrition Facts:
+  <div class="fact">Calories: {{nutritionFacts.calories}}</div>
+  <div class="fact">Protein: {{nutritionFacts.protein}}</div>
+  <div class="fact">Carbohydrats: {{nutritionFacts.carbohydrates}}</div>
+  <div class="fact">Fats: {{nutritionFacts.fats}}</div>
+</div>

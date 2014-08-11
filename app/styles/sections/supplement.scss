@@ -1,3 +1,8 @@
-#supplement{
+#supplement {
+  overflow: auto;
+  text-align: center;
 
+  .supplement-image{
+    height: 200px;
+  }
 }
