@@ -1,32 +1,12 @@
-<nav id="left-menu">
-  <div class="logo"></div>
-  <div id="filter">
-    {{input value=supplementName class="search-box" type="text" placeholder="Type something..."}}
-    <label>
-      <span class="search-icon"></span>
-    </label>
-
+<div class="content">
+  <div class="inner">
+    {{#each displayedContent}}
+      {{#link-to "supplement" id}}
+        <figure {{bind-attr class=":supplement-card type.name"}}>
+          <img {{bind-attr src="image"}}>
+          <figcaption>{{name}}</figcaption>
+        </figure>
+      {{/link-to}}
+    {{/each}}
   </div>
-  <ul>
-    <li>
-      Type: {{view "custom-select" content=supplementTypeNames value=currentSupplementType}}
-    </li>
-    <li>
-      Brand: {{view "custom-select" content=brandNames value=currentBrand}}
-    </li>
-  </ul>
-</nav>
-<section id="dashboard-section">
-  <div class="content">
-    <div class="inner">
-      {{#each displayedContent}}
-        {{#link-to "supplement" id}}
-          <figure class="supplement-card">
-            <img {{bind-attr src="image"}}>
-            <figcaption>{{name}}</figcaption>
-          </figure>
-        {{/link-to}}
-      {{/each}}
-    </div>
-  </div>
-</section>
+</div>

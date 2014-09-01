@@ -5,41 +5,22 @@
     cursor: pointer;
     transition: all 0.5s;
 
+    &.protein{
+      background: $protein-color;
+    }
+    &.casein{
+      background: $casein-color;
+    }
+    &.creatine{
+      background: $creatine-color;
+    }
+    &.glutamine{
+      background: $glutamine-color;
+    }
     &:hover{
       box-shadow: 0 1px 15px 3px rgba(34, 25, 25, 0.4);
       transform: scale(1.02);
       background-color: #ebebeb;
-    }
-  }
-
-  #left-menu{
-    width: 200px;
-    border-right: 1px solid black;
-
-    .logo{
-      @include background-image('supplepedia-logo.gif');
-      @include square(100px);
-      background-position: center;
-      background-size: contain;
-      margin: 10px auto;
-      background-repeat: no-repeat;
-      background-color: black;
-      border-radius: 50%;
-    }
-
-    ul{
-      text-align: right;
-      padding-right: 22px;
-
-      li{
-        margin-bottom: 10px;
-      }
-    }
-
-    select{
-      height: 27px;
-      width: 100px;
-      text-transform: capitalize;
     }
   }
 
@@ -51,13 +32,6 @@
   #filter{
     text-align: center;
     padding: 10px 0;
-  }
-
-  .content{
-    height: 100%;
-    padding: 10px;
-    overflow: auto;
-    text-align: center;
   }
 
   .supplement{

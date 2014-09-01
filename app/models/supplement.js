@@ -9,8 +9,8 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   weight: DS.attr('string'),
   description: DS.attr('string'),
-  flavors: DS.attr('array'),
-  nutritionFacts: DS.attr('object'),
+  // flavors: DS.attr('array'),
+  // nutritionFacts: DS.attr('object'),
 
   type: DS.belongsTo('supplementType'),
   brand: DS.belongsTo('brand')

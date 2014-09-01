@@ -1,2 +1,25 @@
+<header class="application-header"></header>
+<div class="application-wrapper">
+  <nav id="left-menu">
+    <div class="logo"></div>
+    <div id="filter">
+      {{input value=supplementName class="search-box" type="text" placeholder="Type something..."}}
+      <label>
+        <span class="search-icon"></span>
+      </label>
+
+    </div>
+    <ul>
+      <li>
+        Type: {{view "custom-select" content=supplementTypeNames value=currentSupplementType}}
+      </li>
+      <li>
+        Brand: {{view "custom-select" content=brandNames value=currentBrand}}
+      </li>
+    </ul>
+  </nav>
+  <div class="application-content">
+    {{outlet}}
+  </div>
+</div>
 <div id="init-logo"></div>
-{{outlet}}

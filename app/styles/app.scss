@@ -1,6 +1,7 @@
 @import "vendor/sass-flex-mixin/flex";
 @import "utils/reset";
 @import "utils/mixins";
+@import "config";
 
 @import "cards";
 @import "forms";
@@ -11,6 +12,7 @@ html, body {
   overflow: hidden;
   position: relative;
   margin: 0;
+  color: white;
 }
 
 .main-section{
@@ -19,11 +21,13 @@ html, body {
 
 #supplepedia{
   @include square(100%);
+
   &.loaded{
     #init-logo{
       opacity: 0;
     }
   }
+
   #init-logo{
     @include flexbox;
     @include justify-content(center);
@@ -37,7 +41,7 @@ html, body {
     background-color: black;
 
     &:before{
-      @include background-image('supplepedia-logo.gif');
+      @include background-image('supplepedia-logo.png');
       content: " ";
       border-radius: 50%;
       background-color: white;
@@ -47,5 +51,58 @@ html, body {
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
+
+  .application-wrapper{
+    @include flexbox;
+    height: calc(100% - #{$header-size});
+  }
+
+  //LATERAL MENU
+  #left-menu{
+    background: $left-menu-color;
+
+    .logo{
+      @include background-image('supplepedia-logo.png');
+      @include square(80px);
+      background-position: center;
+      background-size: contain;
+      margin: 10px auto;
+      background-repeat: no-repeat;
+      background-color: white;
+      border-radius: 50%;
+      border: 0.4rem solid white;
+      margin-top: -2.8rem;
+    }
+
+    ul{
+      text-align: right;
+      padding-right: 22px;
+
+      li{
+        margin-bottom: 10px;
+      }
+    }
+
+    select{
+      height: 27px;
+      width: 100px;
+      text-transform: capitalize;
+    }
+  }
+
+  //APPLICATION CONTENT
+  .application-content{
+    @include flex(1);
+    background: $content-bg-color;
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+    text-align: center;
+  }
+
+  .application-header{
+    background: $header-color;
+    height: $header-size;
   }
 }
